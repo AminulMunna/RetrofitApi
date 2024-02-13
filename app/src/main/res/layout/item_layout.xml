@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="15dp"
+    app:cardMaxElevation="15dp"
+    app:cardBackgroundColor="#E6E3E3"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idTv"
+            android:textStyle="bold"
+            android:text="id :"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:textStyle="bold"
+            android:text="id"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@id/idTv"
+            app:layout_constraintTop_toTopOf="@id/idTv"
+            app:layout_constraintBottom_toBottomOf="@id/idTv"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userIdTv"
+            android:textStyle="bold"
+            android:text="User Id :"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@id/idTv"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userId"
+            android:textStyle="bold"
+            android:text="user id"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@id/userIdTv"
+            app:layout_constraintTop_toTopOf="@id/userIdTv"
+            app:layout_constraintBottom_toBottomOf="@id/userIdTv"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTv"
+            android:textStyle="bold"
+            android:text="Title :"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@id/userIdTv"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/titleTv"
+            app:layout_constraintTop_toTopOf="@id/titleTv" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bodyTv"
+            android:textStyle="bold"
+            android:text="Body :"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@id/titleTv"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="body"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bodyTv"
+            app:layout_constraintTop_toTopOf="@id/bodyTv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
